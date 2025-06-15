@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Payal</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Heart Rain -->
+  <div class="heart-container" id="hearts"></div>
+
+  <!-- 16th June Animation -->
+  <div id="date-screen" class="center-text">
+    <span class="full-date">16<sup>th</sup> June</span>
+  </div>
+
+  <!-- Cake Screen -->
+  <div id="cake-screen" class="hidden center">
+    <img src="cake.png" id="cake" class="cake" alt="Cake"/>
+    <p style="color: white; font-size: 20px;"> Click 🎂🥳</p>
+  </div>
+
+  <!-- Gift Screen -->
+  <div id="gift-screen" class="hidden center">
+    <h1 class="birthday-message">🎉 Happy 19th Birthday, Payal! 🎉</h1>
+    <audio id="birthdaySong" src="song.mp3"></audio>
+
+    <div style="text-align: center;">
+      <img src="giftwrap.png" id="giftWrap" class="gift-wrap" alt="Gift Wrap" onclick="flyAwayGift()" />
+      <p id="giftText" style="color: white; font-size: 20px; margin-top: 10px;">Click🎁</p>
+    </div>
+
+    <div id="photos" class="photos hidden">
+      <img src="photo1.jpg" alt="photo1" />
+      <img src="photo2.jpg" alt="photo2" />
+      <img src="photo3.jpg" alt="photo3" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
